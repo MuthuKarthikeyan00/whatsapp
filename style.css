@@ -1,0 +1,377 @@
+.app{
+  display: grid;
+  place-items: center;
+  background:gray;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app__container{
+ 
+  display: flex;
+  flex-direction: column;
+  background:#011d1d2a;
+  background: rgba(0, 0, 0, 0.178);
+  background: rgba(0, 2, 10, 0.767);
+  width: 100vw;
+  overflow: hidden;
+}
+.bgB{
+  color: rgb(12, 12, 12) !important;
+}
+.bgG{
+  color: rgb(34, 189, 94) !important;
+}
+.bgI{
+  color: rgb(206, 204, 204) !important;
+}
+.bg{
+  color: rgb(170, 165, 165) !important;
+}
+.bgH:hover{
+ background: rgba(126, 125, 125, 0.116);
+}
+.SlideBar{
+ 
+  background: rgba(0, 2, 10, 0.671);
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+ 
+  
+}
+.SlideBarContainer{
+  display: flex;
+  box-shadow: 1px 1px 20px 1px black;
+  flex-direction: column;
+  padding:10px 20px 0px 20px;
+    
+  background: #075E54 !important;
+}
+.SlideBar__headerAvatar{
+
+  width: 40px !important;
+  height: 40px !important;
+}
+.SlideBarContainer >span{
+    font-size: 15px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    color: rgb(184, 180, 180);
+}
+.SlideBar__header{
+
+  display: flex;
+  align-items: center;
+  height: fit-content;
+
+}
+.SlideBar__header >span{
+   margin: 0 20px;
+   width: 200px !important;
+   /* border: solid 1px white; */
+   font-size: 20px;
+   font-weight: bolder;
+}
+.SlideBar__headerRight{
+/* border: solid 2px white; */
+margin-left:auto ;
+}
+.SlideBar__Button{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.SlideBar__Button  >.SlideBar__Link{
+       border: none;
+       outline: none;
+       background-color: transparent;
+       color: rgb(184, 180, 180);
+       height: 30px;
+       padding-bottom: 15px;
+       transition: .5ms ease-out;
+       border-bottom: transparent 4px solid;
+       margin:0px auto ;
+      
+ 
+}
+.SlideBar__Button > .SlideBar__Link:focus{
+
+  background-color: transparent;
+  color: rgb(117, 114, 114);
+  color: rgb(13, 185, 56);
+  border-bottom: turquoise 2px solid;
+ 
+}
+.SlideBarChat{
+ overflow: scroll;
+ padding: 10px;
+}
+.SlideBarChatContainer{
+    padding: 10px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    border-bottom: solid 2px  rgba(83, 83, 83, 0.459) ;
+}
+.groupInfo >span{
+  font-size: 20px;
+  font-weight: bolder;
+
+}
+.groupInfo{
+  margin-left:4%;
+
+}
+a{
+  text-decoration: none !important;
+
+}
+.Chat{
+    height: 100vh !important; 
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+}
+.Chat__header{
+  flex: 0.05;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 100px 1px rgb(245, 245, 245);
+}
+.Chat__headerInfo{
+  flex:.99;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  height: 30px;
+  margin-left: 4%;
+  font-size: 70%;
+}
+.Chat__headerInfo >h3{
+   height: 8px;
+   font-weight: 500;
+   color: white;
+  }
+
+
+  
+.Chat__headerRight{
+     flex: .2;
+    display: flex;
+
+    min-width: 10px;
+  }
+.Chat__message{
+    position: relative;
+     background: rgba(71, 71, 71, 0.966);
+     border-radius: 10px;
+     padding: 10px;
+     color: rgb(206, 205, 205);
+     font-size: 16px;
+     width: fit-content;
+     margin-bottom: 30px;
+     max-width: 70%;
+     overflow-wrap: break-word;
+}
+.Chat__name{
+      top: -15px;
+      position: absolute;
+      font-weight: 800;
+      font-size: xx-small;
+}
+.Chat__timestamp{
+   margin-left: 10px;
+   font-size: xx-small;
+}
+.Chat__reciver{
+  margin-left: auto !important;
+  background-color: #057c6c !important;
+  color: rgb(19, 18, 18) !important;
+  font-weight: bolder;
+}
+
+.Chat__body{
+  flex: .97;
+   height: 300px !important;
+  background-image:url("../img/darkW.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  padding: 30px;
+  background-size:contain ;
+  overflow: scroll;
+}
+.Chat__messageIMG{
+  width:100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+.Chat__messageIMG >img{
+  width:100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+.Chat__messageVideo{
+  width:100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+
+
+
+.Chat__footer{
+ flex: 0.0.1;
+  display: flex;
+  border-radius: 50px;
+  justify-content: space-between;
+  align-items: center;
+
+  
+}
+.Chat__footer >form{
+ flex:1;
+ display: flex;
+ margin: 5px;
+ border-radius: 50px;
+
+}
+.Chat__footer >form>input{
+  flex:1;
+  display: flex;
+  padding: 10px;
+  border: none;
+  color: white;
+  background: rgba(211, 211, 211, 0.24);
+  border-radius: 50px;
+  outline: none;
+}
+.Chat__footer >form>input:focus{
+border-radius:50px ;
+
+}
+.Chat__footer >form>button{
+display: none;
+}
+
+  .Chat__footer >.MuiSvgIcon-root{
+    color: gray;
+    padding: 10px;
+  }
+
+ .floatIconsHide{
+   display: none;
+    width: 98%;
+    z-index: 1;
+    position: absolute;
+    bottom: -90px;
+    transition: .3s;
+ } 
+ .floatIconsShow{
+
+  width: 98%;
+    transition: ease-in-out .4s;
+  z-index: 10;
+  position: absolute;
+  bottom:70px;
+
+} 
+ .floatIconsContainer{
+    background: transparent;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    padding: 10px;
+    transition: .5s ease-in;
+} 
+.floatIconsContainer >input{
+  background: gray;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+
+  overflow: hidden;
+  
+} 
+.fileInput{
+  margin-left:20px ;
+}
+.fileInput >input[type="file"]{
+display: none;
+  
+} 
+
+.lShow{
+  transition: .5s ease-in;
+  border-radius:50px;
+  padding: 7px 9px;
+}
+.lHide{
+  transition: .5s ease-in;
+  border-radius:50px;
+  padding: 0px;
+}
+
+
+
+
+  .Login{
+    display: flex;
+    justify-content: center;
+      
+   }
+   .Login__container{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        height: 100vh;      padding: 50px 0px 50px 50px;
+        width:100vw;
+   }
+   .Login__container2 >h2{
+         margin: 20px 0;
+        
+   }
+   .Login__container2 {
+       border-left:solid 10px rgb(29, 185, 159);
+       padding-left: 20px;
+       border-radius: 0px 10px 10px 10px/20px 20px 20px 20px;
+       transition: ease-in .5s;
+       
+      
+   }
+   .Login__containerGOOGLE >img{
+        width: 50px;
+        background-color: white;
+        border:rgb(29, 185, 159) solid 2px;
+        border-radius: 50px;
+        z-index:3;
+        
+   }
+   .Login__containerGOOGLE{
+       z-index:33;
+   }
+   .Login__containerGOOGLE >img:hover{
+       width: 70px;
+       border:rgb(29, 185, 159) solid 4px;
+       border-radius: 60px;
+       
+   }
+   .Login__containerGOOGLE >img:active{
+       width: 100px;
+       border:rgb(29, 185, 159) solid 4px;
+       border-radius: 60px;
+       transition: ease-in-out .1s;
+   }
+   
+   .bgb{
+       background: rgb(156, 18, 236) ;
+       transition: .5s ease-in;
+       color: white;
+   }
+  
